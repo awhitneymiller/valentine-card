@@ -1,6 +1,6 @@
-/* Make Background Light Pink */
+
 body {
-  background-color: #f1e1e1; /* Light pink */
+  background-color: #f1e1e1; 
   margin: 0;
   display: flex;
   justify-content: center;
@@ -9,7 +9,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Heart Buttons */
+
 .heart-button {
   width: 100px;
   height: 90px;
@@ -23,7 +23,7 @@ body {
   transition: transform 0.3s ease, background-color 0.3s ease;
   position: relative;
   
-  /* Heart Shape */
+
   background-color: #b94237;
   clip-path: path("M50 15 A 20 20, 0, 1, 1, 90 50 Q 50 90, 10 50 A 20 20, 0, 1, 1, 50 15 Z");
 
@@ -32,22 +32,22 @@ body {
   text-align: center;
 }
 
-/* Hover Effect */
+
 .heart-button:hover {
   transform: scale(1.1);
   background-color: #d02771;
 }
 
-/* Keep Buttons Side by Side */
+
 .flex.gap-6 {
   display: flex;
-  flex-direction: row; /* Buttons start side by side */
+  flex-direction: row; 
   justify-content: center;
   align-items: center;
-  gap: 20px; /* Space between buttons */
+  gap: 20px; 
 }
 
-/* Fully Center Content */
+
 .min-h-screen {
   min-height: 100vh;
   display: flex;
@@ -58,7 +58,7 @@ body {
   width: 100%;
 }
 
-/* Ensure Images Scale Properly */
+
 img {
   max-width: 100%;
   height: auto;
@@ -66,18 +66,18 @@ img {
   margin: 0 auto;
 }
 
-/* No Button Animation */
+
 .heart-button.absolute {
   position: absolute;
   transition: top 0.3s ease, left 0.3s ease;
 }
 
-/* Valentine Image Scaling */
+
 img.transition-all {
   transition: transform 0.3s ease;
 }
 
-/* Responsive Design for iPhone 11 and Smaller Screens */
+
 @media (max-width: 414px) {
   .heart-button {
     width: 80px;
@@ -86,11 +86,11 @@ img.transition-all {
   }
 
   .flex.gap-6 {
-    flex-direction: column; /* Stack buttons on very small screens */
+    flex-direction: column;
     gap: 10px;
   }
 
   img {
-    max-width: 90%; /* Ensure images don't exceed screen width */
+    max-width: 90%; 
   }
 }

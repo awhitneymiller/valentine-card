@@ -22,9 +22,9 @@ function App() {
     setYesScale((prevScale) => prevScale + 0.2); // Increase "Yes" button size
     setValentineScale((prevScale) => prevScale + 0.05); // Increase Valentine.png size
 
-    // Ensure "No" button stays within the screen (safe for iPhone 11)
-    const maxWidth = window.innerWidth - 120; // Button width + padding
-    const maxHeight = window.innerHeight - 150; // Avoid going too high/low
+    
+    const maxWidth = window.innerWidth - 120; 
+    const maxHeight = window.innerHeight - 150; 
 
     const randomX = Math.floor(Math.random() * maxWidth);
     const randomY = Math.floor(Math.random() * maxHeight);
